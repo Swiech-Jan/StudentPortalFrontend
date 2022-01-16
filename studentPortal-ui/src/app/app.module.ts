@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { StudentsComponent } from './students/students.component';
+import { HttpClientModule } from '@angular/common/http';
+
 // Add below imports to the Imports Section on the top of the page
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -48,10 +51,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { TopNavComponent } from './layout/top-nav/top-nav.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TopNavComponent, StudentsComponent],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
