@@ -52,10 +52,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { TopNavComponent } from './layout/top-nav/top-nav.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, TopNavComponent, StudentsComponent],
   imports: [
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
