@@ -119,7 +119,7 @@ export class ViewStudentComponent implements OnInit {
         });
 
         setTimeout(() => {
-          this.router.navigateByUrl(`students/${successResponse.id}`);
+          this.router.navigateByUrl('students');
         }, 2000);
       },
       (errorResponse) => {
